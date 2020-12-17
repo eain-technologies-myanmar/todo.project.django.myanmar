@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from TodoMyanmar.views import index # App Name မှ index ကို ဆွဲယူအသုံးပြုမယ်
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', index, name='index'), # မူလလမ်းကြောင်းမှာ ပေါ်အောင် ထည့်သွင်းရေးသားခြင်း ဖြစ်ပါတယ်
 ]
