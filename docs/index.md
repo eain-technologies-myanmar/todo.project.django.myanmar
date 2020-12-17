@@ -1,37 +1,58 @@
-## Welcome to GitHub Pages
+# လုပ်ဆောင်  [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20this%20cool%20project&url=https://github.com/thetwinhtwe/todo.project.django.myanmar&hashtags=todo,project,myanmar,opensource)
+"လုပ်ဆောင်" ဆိုတာ Django သင်ခန်းစာ To Do Application ကို မြန်မာလို အဓိပ္ပါယ်ဖွင့်ဆိုချက်များနဲ့ သင်ထောက်ကူ အခြေပြုရေးသားထားတဲ့ အသုံးချ နည်းပညာ လုပ်ဆောင်ချက် ဖြစ်ပါတယ်။
 
-You can use the [editor on GitHub](https://github.com/thetwinhtwe/todo.project.django.myanmar/edit/version1/docs/index.md) to maintain and preview the content for your website in Markdown files.
+![Github License](https://img.shields.io/badge/license-MIT-green)
+![Bulma Version](https://img.shields.io/badge/Bulma-v0.7.0-blue)
+![Django Version](https://img.shields.io/badge/Django-v3.1-green)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## မာတိကာ
 
-### Markdown
+- [**စတင်ရန်**](#စတင်ရန်)
+- [လိုအပ်သည်များသွင်းယူရန်](#လိုအပ်သည်များသွင်းယူရန်)
+- [ပူးပေါင်းပါဝင်တည်ဆောက်သူများ](#ပူးပေါင်းပါဝင်တည်ဆောက်သူများ)
+- [လိုင်စင်](#လိုင်စင်)
+- [အကူအညီ](#အကူအညီလိုပါက)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## စတင်ရန်
 
-```markdown
-Syntax highlighted code block
+ပြင်ဆင်ရေးသားရန်
 
-# Header 1
-## Header 2
-### Header 3
+### လိုအပ်သည်များသွင်းယူရန်
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```console
+pip install Django
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### အသုံးပြုနည်း
 
-### Jekyll Themes
+ပြင်ဆင်ရေးသားရန်
+```javascript
+import { configure, useProject } from 'your-project';
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/thetwinhtwe/todo.project.django.myanmar/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+configure();
 
-### Support or Contact
+const App = () => {
+  const [project, setProject] = useProject();
+  // ... More pseudo code here...
+}
+```
+## အသုံးပြုနည်းပညာများ
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Django v3.1, Bluma v0.7.0
+
+## ပူးပေါင်းပါဝင်တည်ဆောက်သူများ
+
+[သက်ဝင်းထွေး](http://www.thetwinhtwe.com)
+
+##  [ဆွေးနွေးချက်များ ပြုလုပ်ခြင်း](https://github.com/todo.project.django.myanmar/issues)
+
+နည်းပညာ ချွတ်ယွင်းမှုများ၊ ပြန်လည်ပြုပြင်ချက်များ ၊ အကြံပြုချက်များကို ပြုလုပ်နိုင်ပါသည်။ ပိုမိုကောင်းမွန်သော လူ့ဘောင်အဖွဲ့အစည်းသို့ ဦးတည်၍ လိုအပ်ချက်များကို အတူတူဖြည့်စည်းခြင်းဖြင့် ရှေ့ဆက်လိုပါသည်။ 
+
+## လိုင်စင်
+
+ဤ project သည် [MIT License](https://github.com/todo.project.django.myanmar/blob/master/LICENSE) ၏ အောက်တွင် အကျုံးဝင်ပါသည်။
+
+## အကူအညီလိုပါက
+
+- ဆက်သွယ်ရန်မှာ thetwinhtwe@gmail.com (သို့မဟုတ်)
+- [ဤတွင်လည်း](https://github.com/todo.project.django.myanmar/issues) နှိပ်၍ ဆွေးနွေးချက်များဖြင့် ဆွေးနွေးနိုင်ပါသည်။
