@@ -1,5 +1,9 @@
 {% extends 'default.html' %} <!-- default.html မှ အချက်အလက်များကို ဆွဲယူအသုံးပြုခြင်း -->
       {% block content %}
+      <form>
+      	{{form}}
+      	<input type="submit" name="Create Task">
+      </form>
 	     
 	      {% for task in tasks %} <!-- views.py မှ ပေးပို့လာသောအချက်အလက်များကို ခင်းကျင်းပြသခြင်း -->
 	      	<p>{{task}}<p> <!-- လုပ်ဆောင်ချက်များအား စာပိုဒ်ပုံစံဖြင့် ဖော်ပြ-->
