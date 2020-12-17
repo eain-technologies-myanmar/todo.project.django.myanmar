@@ -1,7 +1,8 @@
 {% extends 'default.html' %} <!-- default.html မှ အချက်အလက်များကို ဆွဲယူအသုံးပြုခြင်း -->
       {% block content %}
-      <form>
-      	{{form}}
+      <form method="POST" action="/"> <!-- POST နဲ့ယူပြီး ဒီမှာပဲ အလုပ်လုပ်-->
+      	 {% csrf_token %}
+      	{{form.title}} <!-- ခေါင်းစဥ်ပဲ ရိုက်ဖို့လိုလို့ .title နဲ့ သတ်မှတ် -->
       	<input type="submit" name="Create Task">
       </form>
 	     
