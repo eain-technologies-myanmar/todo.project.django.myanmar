@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #လုပ်ဆောင် App အသုံးပြုရန် ထည့်သွင်းခြင်း
+    'TodoMyanmar',
 ]
 
 MIDDLEWARE = [
