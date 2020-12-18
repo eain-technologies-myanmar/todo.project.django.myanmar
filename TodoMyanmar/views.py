@@ -16,3 +16,13 @@ def index(request):
 		return redirect('/') # ပြီးမှ မူလစာမျက်နှာကို ပြန်ခေါ်
 	context={'tasks':tasks,'form':form}
 	return render(request,'index.html',context) # index page သို့ database မှအချက်အလက်များ ပို့ဆောင်
+def updateTask(request,pk):
+	task=Task.objects.get(id=pk)
+	form=TaskForm(instance=task)
+	if request.method=='POST':
+		form=TaskForm(request.POST,instance=task)
+		if form.is_valid():
+			form.save()
+			return redirect('/')
+	context={'form':form}
+	return render(request,'update_task.html',context)

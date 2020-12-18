@@ -3,11 +3,14 @@
       <form method="POST" action="/"> <!-- POST နဲ့ယူပြီး ဒီမှာပဲ အလုပ်လုပ်-->
       	 {% csrf_token %}
       	{{form.title}} <!-- ခေါင်းစဥ်ပဲ ရိုက်ဖို့လိုလို့ .title နဲ့ သတ်မှတ် -->
-      	<input type="submit" name="Create Task">
+      	<input type="submit" name="Create Task" value="ထည့်">
       </form>
 	     
 	      {% for task in tasks %} <!-- views.py မှ ပေးပို့လာသောအချက်အလက်များကို ခင်းကျင်းပြသခြင်း -->
-	      	<p>{{task}}<p> <!-- လုပ်ဆောင်ချက်များအား စာပိုဒ်ပုံစံဖြင့် ဖော်ပြ-->
+	      	<p>
+	      		{{task}} <!-- လုပ်ဆောင်ချက်များအား စာပိုဒ်ပုံစံဖြင့် ဖော်ပြ-->
+	      		<a href="{% url 'update_task' task.id %}">ပြင်</a> 
+	      	<p>
 	      {% endfor %}
 
       {% endblock %}

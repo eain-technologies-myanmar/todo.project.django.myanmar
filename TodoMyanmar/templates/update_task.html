@@ -1,0 +1,10 @@
+{% extends 'default.html' %} <!-- default.html မှ အချက်အလက်များကို ဆွဲယူအသုံးပြုခြင်း -->
+      {% block content %}
+       <h3>Update Task</h3>
+      <form method="POST">
+            {% csrf_token %}
+            {{form}}
+            <input type="submit" name="Update Task" value="ထည့်">
+      </form>
+
+      {% endblock %}
