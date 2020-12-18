@@ -9,7 +9,9 @@
 	      {% for task in tasks %} <!-- views.py မှ ပေးပို့လာသောအချက်အလက်များကို ခင်းကျင်းပြသခြင်း -->
 	      	<p>
 	      		{{task}} <!-- လုပ်ဆောင်ချက်များအား စာပိုဒ်ပုံစံဖြင့် ဖော်ပြ-->
-	      		<a href="{% url 'update_task' task.id %}">ပြင်</a> 
+	      		<a href="{% url 'update_task' task.id %}">ပြင်</a>
+	      		|
+	      		<a href="{% url 'delete_task' task.id %}">ဖျက်</a> 
 	      	<p>
 	      {% endfor %}
 

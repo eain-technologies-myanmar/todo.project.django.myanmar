@@ -1,0 +1,10 @@
+{% extends 'default.html' %} <!-- default.html မှ အချက်အလက်များကို ဆွဲယူအသုံးပြုခြင်း -->
+      {% block content %}
+	<p>"{{item}}" ကို ဖျက်မှာ သေချာပါသလား?</p>
+	<a href="{% url 'list' %">Cancle</a>
+	<form method="POST">
+		{% csrf_token %}
+		<input type="submit" name="Confirm" value="ဖျက်">
+	</form>
+
+      {% endblock %}
