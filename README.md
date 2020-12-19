@@ -73,7 +73,7 @@ Django v3.1 , Bulma v0.9.1 , Font Awesome v5.15.1
 
 ## လိုင်စင်
 
-ဤ project သည် [MIT License](https://github.com/todo.project.django.myanmar/LICENSE) ၏ အောက်တွင် အကျုံးဝင်ပါသည်။
+ဤ project သည် [MIT License](https://github.com/todo.project.django.myanmar/blob/version1/LICENSE) ၏ အောက်တွင် အကျုံးဝင်ပါသည်။
 
 ## အကူအညီလိုပါက
 
