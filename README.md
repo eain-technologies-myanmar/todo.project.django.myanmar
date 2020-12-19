@@ -2,8 +2,9 @@
 "လုပ်ဆောင်" ဆိုတာ Django သင်ခန်းစာ To Do Application ကို မြန်မာလို အဓိပ္ပါယ်ဖွင့်ဆိုချက်များနဲ့ သင်ထောက်ကူ အခြေပြုရေးသားထားတဲ့ အသုံးချ နည်းပညာ လုပ်ဆောင်ချက် ဖြစ်ပါတယ်။
 
 ![Github License](https://img.shields.io/badge/license-MIT-green)
-![Bulma Version](https://img.shields.io/badge/Bulma-v0.7.0-blue)
+![Bulma Version](https://img.shields.io/badge/Bulma-v0.9.1-blue)
 ![Django Version](https://img.shields.io/badge/Django-v3.1-green)
+![Font Awesome Version](https://img.shields.io/badge/Font%20Awesome-v5-orange)
 
 ## မာတိကာ
 
@@ -38,7 +39,7 @@ const App = () => {
 ```
 ## အသုံးပြုနည်းပညာများ
 
-Django v3.1, Bluma v0.7.0
+Django v3.1 , Bulma v0.9.1 , Font Awesome v5.15.1
 
 ## ပူးပေါင်းပါဝင်တည်ဆောက်သူများ
 
@@ -46,11 +47,11 @@ Django v3.1, Bluma v0.7.0
 
 ##  [ဆွေးနွေးချက်များ ပြုလုပ်ခြင်း](https://github.com/todo.project.django.myanmar/issues)
 
-နည်းပညာ ချွတ်ယွင်းမှုများ၊ ပြန်လည်ပြုပြင်ချက်များ ၊ အကြံပြုချက်များကို ပြုလုပ်နိုင်ပါသည်။ ပိုမိုကောင်းမွန်သော လူ့ဘောင်အဖွဲ့အစည်းသို့ ဦးတည်၍ လိုအပ်ချက်များကို အတူတူဖြည့်စည်းခြင်းဖြင့် ရှေ့ဆက်လိုပါသည်။ 
+နည်းပညာဆိုင်ရာ ချွတ်ယွင်းမှုများ၊ ပြန်လည်ပြုပြင်ချက်များ ၊ အကြံပြုချက်များကို ပြုလုပ်နိုင်ပါသည်။ ပိုမိုကောင်းမွန်သော လူ့ဘောင်အဖွဲ့အစည်းသို့ ဦးတည်၍ လိုအပ်ချက်များကို အတူတူဖြည့်စည်းခြင်းဖြင့် ရှေ့ဆက်လိုပါသည်။ 
 
 ## လိုင်စင်
 
-ဤ project သည် [MIT License](https://github.com/todo.project.django.myanmar/blob/master/LICENSE) ၏ အောက်တွင် အကျုံးဝင်ပါသည်။
+ဤ project သည် [MIT License](https://github.com/todo.project.django.myanmar/LICENSE) ၏ အောက်တွင် အကျုံးဝင်ပါသည်။
 
 ## အကူအညီလိုပါက
 
