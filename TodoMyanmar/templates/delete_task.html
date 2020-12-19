@@ -1,10 +1,31 @@
 {% extends 'default.html' %} <!-- default.html မှ အချက်အလက်များကို ဆွဲယူအသုံးပြုခြင်း -->
       {% block content %}
-	<p>"{{item}}" ကို ဖျက်မှာ သေချာပါသလား?</p>
-	<a href="{% url 'list' %">Cancle</a>
-	<form method="POST">
-		{% csrf_token %}
-		<input type="submit" name="Confirm" value="ဖျက်">
-	</form>
+      <div class="notification is-warning">
+		<p class="block">"{{item}}"-လုပ်ဆောင်ချက် ကို ဖျက်မှာ သေချာပါသလား</p>
+		
+		<form method="POST">
+			{% csrf_token %}
+				
+			<a class="button is-danger is-outlined" href="{% url 'index' %}">
+				<span class="icon is-small">
+					<i class="fas fa-times"></i>
+				</span>
+				<span>မဖျက်
+			</a>
+			</span>
+      <span class="control has-icons-left">
+      <input class="button is-success is-outlined" type="submit" name="Confirm" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ဖျက်">
+	 <span class="icon is-small is-left">
+	<i class="fas fa-check"></i>
+
+	</span>
+	</span>
+		</form>
+		</div>
 
       {% endblock %}
+
+
+
+
+

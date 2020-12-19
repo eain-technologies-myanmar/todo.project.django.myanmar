@@ -1,18 +1,47 @@
 {% extends 'default.html' %} <!-- default.html မှ အချက်အလက်များကို ဆွဲယူအသုံးပြုခြင်း -->
       {% block content %}
       <form method="POST" action="/"> <!-- POST နဲ့ယူပြီး ဒီမှာပဲ အလုပ်လုပ်-->
-      	 {% csrf_token %}
-      	{{form.title}} <!-- ခေါင်းစဥ်ပဲ ရိုက်ဖို့လိုလို့ .title နဲ့ သတ်မှတ် -->
-      	<input type="submit" name="Create Task" value="ထည့်">
-      </form>
-	     
-	      {% for task in tasks %} <!-- views.py မှ ပေးပို့လာသောအချက်အလက်များကို ခင်းကျင်းပြသခြင်း -->
-	      	<p>
-	      		{{task}} <!-- လုပ်ဆောင်ချက်များအား စာပိုဒ်ပုံစံဖြင့် ဖော်ပြ-->
-	      		<a href="{% url 'update_task' task.id %}">ပြင်</a>
-	      		|
-	      		<a href="{% url 'delete_task' task.id %}">ဖျက်</a> 
-	      	<p>
-	      {% endfor %}
+      
+	     <div class="field has-addons is-horizontal">
+		  <div class="control is-expanded">
+		          	 {% csrf_token %}
+      				{{form.title}} <!-- ခေါင်းစဥ်ပဲ ရိုက်ဖို့လိုလို့ .title နဲ့ သတ်မှတ် -->
+		  </div>
+		  <div class="control">
+		    <input class="button is-info is-outlined" type="submit" name="Create Task" value="ထည့်">
+		  </div>
+		</div>
+		</form>
+	      <div class="card">
+		  <div class="card-content">
+		  {% for task in tasks %} <!-- views.py မှ ပေးပို့လာသောအချက်အလက်များကို ခင်းကျင်းပြသခြင်း -->
+		  <div class="block">
+		          <p class="has-text-right m-3"><!-- လုပ်ဆောင်ချက်များအား စာပိုဒ်ပုံစံဖြင့် ဖော်ပြ-->
+		    {% if task.complete == True %}
+		            <strike class="has-text-grey-lighter"> {{task}} </strike>
+		    {% else %}
+						<span>{{task}}</span>
+			{% endif %}
+					</p>
+			<p class="has-text-right m-3">
+		        <a class="button is-primary is-outlined" href="{% url 'update_task' task.id %}">
+				<span class="icon is-small">
+					<i class="fas fa-edit"></i>
+				</span>
+				<span>ပြင်
+				</a>
+		        <a class="button is-danger is-outlined" href="{% url 'delete_task' task.id %}">
+				<span class="icon is-small">
+					<i class="fas fa-times"></i>
+				</span>
+				<span>ဖျက်
+				</a>
+
+		    </p>
+		   </div>
+		   <hr />
+		        {% endfor %}
+		  </div>
+		</div>
 
       {% endblock %}

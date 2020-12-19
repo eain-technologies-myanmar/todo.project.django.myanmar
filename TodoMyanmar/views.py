@@ -6,7 +6,8 @@ from .forms import TaskForm # forms.py မှ TaskForm ကို ခေါ်သ
 def index(request):
 	#return HttpResponse('<h1>လုပ်ဆောင်</h1>') # ပေါ်ချင်တာ ရေးပြီးတဲ့အခါ လက်တွေလုပ်ဆောင်နိုင်ရန် urls.py တွင် ကြေညာ၍ အသုံးပြုရမယ်
 	#return render(request,"index.html",{})
-	tasks=Task.objects.all()
+	#tasks=Task.objects.all()
+	tasks=Task.objects.order_by('complete') #မလုပ်ရသေးတာကို အပေါ်မှာထားပြီး လုပ်ပီးတာကို အောက်မှာထား
 	form =TaskForm() #forms.py က TaskForm ကို ​form ထဲထည့်
 
 	if request.method == 'POST': # data ထည့်တာ ရှိခဲ့ရင်

@@ -1,10 +1,25 @@
 {% extends 'default.html' %} <!-- default.html မှ အချက်အလက်များကို ဆွဲယူအသုံးပြုခြင်း -->
       {% block content %}
-       <h3>Update Task</h3>
-      <form method="POST">
-            {% csrf_token %}
-            {{form}}
-            <input type="submit" name="Update Task" value="ထည့်">
-      </form>
+
+        <form method="POST"> <!-- POST နဲ့ယူပြီး ဒီမှာပဲ အလုပ်လုပ်-->
+	     <div class="field has-addons is-horizontal">
+		  <div class="control is-expanded">
+		          	 {% csrf_token %}
+		          	 {{form.title}} 
+		          	 {{form.complete}} 				
+      				<span class="icon is-small">
+				<i class="fas fa-tasks"></i>
+				</span>
+				<label for="id_complete">ပြီး </label>
+		  </div>
+		  <div class="control">
+		    <input class="button is-info is-outlined" type="submit" name="Update Task" value="ထည့်">
+		  </div>
+		</div>
+		</form>
 
       {% endblock %}
+
+
+
+
