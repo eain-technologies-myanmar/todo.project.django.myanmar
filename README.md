@@ -67,7 +67,7 @@ Django v3.1 , Bulma v0.9.1 , Font Awesome v5.15.1
 
 [သက်ဝင်းထွေး](http://www.thetwinhtwe.com)
 
-##  [ဆွေးနွေးချက်များ ပြုလုပ်ခြင်း](https://github.com/todo.project.django.myanmar/issues)
+##  [ဆွေးနွေးချက်များ ပြုလုပ်ခြင်း](https://github.com/thetwinhtwe/todo.project.django.myanmar/issues)
 
 နည်းပညာဆိုင်ရာ ချွတ်ယွင်းမှုများ၊ ပြန်လည်ပြုပြင်ချက်များ ၊ အကြံပြုချက်များကို ပြုလုပ်နိုင်ပါသည်။ ပိုမိုကောင်းမွန်သော လူ့ဘောင်အဖွဲ့အစည်းသို့ ဦးတည်၍ လိုအပ်ချက်များကို အတူတူဖြည့်စည်းခြင်းဖြင့် ရှေ့ဆက်လိုပါသည်။ 
 
@@ -78,4 +78,4 @@ Django v3.1 , Bulma v0.9.1 , Font Awesome v5.15.1
 ## အကူအညီလိုပါက
 
 - ဆက်သွယ်ရန်မှာ thetwinhtwe@gmail.com (သို့မဟုတ်)
-- [ဤတွင်လည်း](https://github.com/todo.project.django.myanmar/issues) နှိပ်၍ ဆွေးနွေးချက်များဖြင့် ဆွေးနွေးနိုင်ပါသည်။
+- [ဤတွင်လည်း](https://github.com/thetwinhtwe/todo.project.django.myanmar/issues) နှိပ်၍ ဆွေးနွေးချက်များဖြင့် ဆွေးနွေးနိုင်ပါသည်။
