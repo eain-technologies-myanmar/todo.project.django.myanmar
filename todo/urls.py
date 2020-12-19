@@ -21,5 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'), # မူလလမ်းကြောင်းမှာ ပေါ်အောင် ထည့်သွင်းရေးသားခြင်း ဖြစ်ပါတယ်
     path('update/<str:pk>/', updateTask, name='update_task'),
-    path('tasks/delete/<str:pk>/', deleteTask, name='delete_task'),
+    path('delete/<str:pk>/', deleteTask, name='delete_task'),
 ]
