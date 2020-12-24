@@ -1,5 +1,2 @@
 from django.apps import AppConfig
-
-
-class TodomyanmarConfig(AppConfig):
-    name = 'TodoMyanmar'
+class TodomyanmarConfig(AppConfig):name='TodoMyanmar'
