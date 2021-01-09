@@ -23,10 +23,12 @@
 
 ### လိုအပ်သည်များသွင်းယူရန်
 ပထမဦးဆုံး ပြုလုပ်ရန်မှာ မိမိစက်တွင် python3 ရှိမရှိ ဆန်းစစ်ရန် ဖြစ်ပါသည်။
+
 ```console
 python3 -V
 ```
 ထိုနောက်မိမိထည့်သွင်းမည့် နေရာစီစဥ်ပီးပါက 
+
 ```console
 git clone https://github.com/thetwinhtwe/todo.project.django.myanmar.git
 ```
@@ -34,19 +36,31 @@ git clone https://github.com/thetwinhtwe/todo.project.django.myanmar.git
 cd todo.project.django.myanmar
 ```
 ထိုနောက်တွင် virtual environment  ကို သွင်းယူပေးရန်လိုအပ်ပါသည်။
+
 ```console
 python3 -m venv env
 ```
-ပြီးလျှင် pip နှင့် Django ကို pip command မှ run ကာ သွင်းပေးရမည်ဖြစ်ပါသည်။
+ပြီးလျှင် pip ကို သွင်းရပါမည်။ ရှိပြီးလျှင် သွင်းဖို့မလိုပါ။
+
 ```console
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3 get-pip.py
 ```
+ထိုမှတစ်ဆင့်
 
 ```console
-pip install Django==3.1
+source env/bin/activate
 ```
+ဆိုပြီး virtual environment ကို activate လုပ်ပေးပါ။ ထို့နောက်တွင်
 
+```console
+python3 -m pip install -r requirements.txt
+```
+ဆိုလျှင် သွင်းယူမှု ပြီးစီးပါပြီ။ virtual environment ကို အသုံးမပြုတော့လျှင် ပြန်ပိတ်ပေးရပါမည်။
+
+```console
+deactivate
+```
 
 ### အသုံးပြုနည်း
 virtual env ကို activate အရင်လုပ်ပါ
